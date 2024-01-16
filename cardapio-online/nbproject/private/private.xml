@@ -2,6 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/wamp64/www/projects/cardapio-online/cardapio-online/cardapio-online/assets/styles/fonts.css</file>
+            <file>file:/C:/wamp64/www/projects/cardapio-online/cardapio-online/cardapio-online/app/controllers/HomeController.php</file>
+            <file>file:/C:/wamp64/www/projects/cardapio-online/cardapio-online/cardapio-online/assets/styles/index.css</file>
+            <file>file:/C:/wamp64/www/projects/cardapio-online/cardapio-online/cardapio-online/app/views/Home/Index.php</file>
+            <file>file:/C:/wamp64/www/projects/cardapio-online/cardapio-online/cardapio-online/assets/styles/config.css</file>
+            <file>file:/C:/wamp64/www/projects/cardapio-online/cardapio-online/cardapio-online/app/views/cabecalho.php</file>
+            <file>file:/C:/wamp64/www/projects/cardapio-online/cardapio-online/cardapio-online/app/views/template.php</file>
+            <file>file:/C:/wamp64/www/projects/cardapio-online/cardapio-online/cardapio-online/assets/styles/vars.css</file>
+        </group>
     </open-files>
 </project-private>

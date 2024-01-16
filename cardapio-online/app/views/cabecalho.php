@@ -8,7 +8,7 @@ switch ($active) {
 }
 ?>
 
-<nav class="py-2 bg-light-blue text-white border-bottom">
+<nav class="py-2 bg-light-green text-white border-bottom">
     <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
             <li class="nav-item"><a href="#" class="nav-link text-white px-2 <?= $class ?>" aria-current="page">Home</a></li>
@@ -23,12 +23,12 @@ switch ($active) {
         </ul>
     </div>
 </nav>
-<header class="py-3 mb-4 border-bottom">
+<header class="py-3">
     <div class="container">
         <a href="<?= URL_BASE ?>" class="mb-3 mb-lg-0 link-body-emphasis text-decoration-none">
             <div class="d-flex flex-wrap justify-content-center">
                 <div>
-                    <span class="material-symbols-outlined size-60pt colors-yellow">
+                    <span class="material-symbols-outlined size-60pt colors-orange">
                         local_pizza
                     </span>
                 </div>

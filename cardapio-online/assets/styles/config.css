@@ -9,6 +9,11 @@ html, body {
     font-family: var(--fonts-content);
 }
 
+/*FONTS*/
+.font-roboto {
+    font-family: var(--fonts-roboto);
+}
+
 /* SIZES */
 .size-80pt {
     font-size: 80pt;
@@ -73,13 +78,18 @@ p {
     font-weight: 800;
 }
 
+mark {
+    text-decoration: underline;
+    background: var(--colors-orange);
+}
+
 /*COLORS*/
 .text-white {
     color: var(--colors-white) !important;
 }
 
-.colors-yellow {
-    color: var(--colors-yellow);
+.colors-orange {
+    color: var(--colors-orange);
 }
 
 /*BACKGROUNDS*/
@@ -87,6 +97,6 @@ p {
     background: var(--colors-burnt-yellow);
 }
 
-.bg-light-blue {
-    background: var(--colors-light-blue);
+.bg-light-green {
+    background: var(--colors-light-green);
 }

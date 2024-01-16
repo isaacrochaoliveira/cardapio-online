@@ -1,1 +1,10 @@
 @charset "UTF-8";
+
+#welcome {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url('../image/home/brand-image.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 350px 180px;
+    color: var(--colors-white);
+}
