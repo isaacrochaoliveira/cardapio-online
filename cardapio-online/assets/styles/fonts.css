@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('../google-fonts/titulos/Great_Vibes/GreatVibes-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Satisfy';
+    src: url('../google-fonts/titulos/Satisfy/Satisfy-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../google-fonts/conteudo/Roboto/Roboto-Regular.ttf');
+}
