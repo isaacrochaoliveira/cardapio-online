@@ -1,10 +1,43 @@
 @charset "UTF-8";
 
-#welcome {
+
+
+#welcome.first {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url('../image/home/brand-image.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     padding: 350px 180px;
     color: var(--colors-white);
+    text-align: center;
+}
+
+#welcome.first h1 {
+    line-height: 120px;
+}
+
+#welcome.first p {
+    text-decoration: underline;
+    color: var(--colors-light-green);
+}
+
+.folha-fundo {
+    background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, 0.3)), url('../image/home/folha-fundo.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#two-column.second button.btn-yellow-image{
+    background-color: var(--colors-burnt-yellow);
+    color: var(--colors-white);
+    padding: 10px 45px;
+}
+
+#cardapio.third h5 {
+    line-height: 20px;
+}
+
+#cardapio.third span {
+    color: var(--colors-light-green);
+    text-decoration: underline;
 }

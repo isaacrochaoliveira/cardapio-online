@@ -12,14 +12,13 @@ switch ($active) {
     <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
             <li class="nav-item"><a href="#" class="nav-link text-white px-2 <?= $class ?>" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Cardápio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Quem Somos</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Notícias</a></li>
         </ul>
         <ul class="nav">
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Login</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Sign up</a></li>
+            <li class="nav-item"><a href="#" class="btn btn-contact">Contato</a></li>
         </ul>
     </div>
 </nav>
