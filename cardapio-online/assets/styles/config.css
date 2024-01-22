@@ -106,6 +106,13 @@ mark {
     color: var(--colors-black);
 }
 
+.btn.btn-green {
+    background: var(--colors-light-green);
+    color: var(--colors-white);
+    border-radius: 0px;
+    padding: 12px 45px;
+}
+
 .font-style-italic {
     font-style: italic;
 }

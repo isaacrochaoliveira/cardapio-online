@@ -33,12 +33,18 @@
                     <h5 class="size-33pt">Macarrão Com Frango</h5>
                     <span class="font-roboto size-36pt">R$29,90</span>
                 </div>
+                <div class="mt-3">
+                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Compra ou Add</a>
+                </div>
             </div>
             <div class="col-md-6">
                 <img src="<?= URL_BASE ?>assets/image/home/prato-2" width="260px">
                 <div class="mt-3">
                     <h5 class="size-33pt">Macarrão Com Frango</h5>
                     <span class="font-roboto size-36pt">R$29,90</span>
+                </div>
+                <div class="mt-3">
+                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Compra ou Add</a>
                 </div>
             </div>
             <div class="col-md-6 mt-5">
@@ -47,12 +53,18 @@
                     <h5 class="size-33pt">Macarrão Com Frango</h5>
                     <span class="font-roboto size-36pt">R$29,90</span>
                 </div>
+                <div class="mt-3">
+                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Compra ou Add</a>
+                </div>
             </div>
             <div class="col-md-6 mt-5">
                 <img src="<?= URL_BASE ?>assets/image/home/prato-4" width="260px">
                 <div class="mt-3">
                     <h5 class="size-33pt">Macarrão Com Frango</h5>
                     <span class="font-roboto size-36pt">R$29,90</span>
+                </div>
+                <div class="mt-3">
+                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Compra ou Add</a>
                 </div>
             </div>
         </div>
