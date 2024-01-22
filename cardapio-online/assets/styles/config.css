@@ -113,6 +113,14 @@ mark {
     padding: 12px 45px;
 }
 
+.btn.btn-darkgreen {
+    background: var(--colors-dark-green);
+    color: var(--colors-white);
+    padding: 15px 65px;
+    margin-top: 100px;
+}
+
+
 .font-style-italic {
     font-style: italic;
 }

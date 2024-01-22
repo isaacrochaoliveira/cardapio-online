@@ -67,6 +67,9 @@
                     <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Compra ou Add</a>
                 </div>
             </div>
+            <div class="text-center">
+                <a href="<?= URL_BASE ?>home/produtos" class="btn btn-darkgreen">Ver Todos os Produtos</a>
+            </div>
         </div>
     </div>
 </section>
