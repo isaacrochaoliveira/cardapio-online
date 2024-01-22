@@ -73,3 +73,47 @@
         </div>
     </div>
 </section>
+<section id="depoimentos" class="fourth mt-5">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h3>Depoimentos</h3>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="d-flex flex-wrap">
+                    <img src="<?= URL_BASE ?>assets/image/home/depoimento1.jpg" alt="Foto da Primeira Pessoa do Depoimento" width="220" class="rounded-5"/>
+                    <div class="m-3">
+                        <h5 class="font-roboto">Ricardo</h5>
+                        <hr>
+                        <span class="fonts-great-vibes size-33pt">Corretor de Ímoveis</span>
+                    </div>
+                    <p class="font-roboto my-3 line-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ac leo a finibus. Nullam tempus rutrum purus quis faucibus. Vestibulum eget ante cursus, viverra elit et, tempus nibh. Curabitur ornare volutpat risus eget interdum. Sed a lacinia quam.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex flex-wrap">
+                    <img src="<?= URL_BASE ?>assets/image/home/depoimento2.jpg" alt="Foto da Primeira Pessoa do Depoimento" width="220" class="rounded-5"/>
+                    <div class="m-3">
+                        <h5 class="font-roboto">Pricilla</h5>
+                        <hr>
+                        <span class="fonts-great-vibes size-33pt">Skatista Profissional</span>
+                    </div>
+                </div>
+                <p class="font-roboto my-3 line-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ac leo a finibus. Nullam tempus rutrum purus quis faucibus. Vestibulum eget ante cursus, viverra elit et, tempus nibh. Curabitur ornare volutpat risus eget interdum. Sed a lacinia quam.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6 mx-auto">
+                <div class="d-flex flex-wrap">
+                    <img src="<?= URL_BASE ?>assets/image/home/depoimento3.jpg" alt="Foto da Primeira Pessoa do Depoimento" width="220" class="rounded-5"/>
+                    <div class="m-3">
+                        <h5 class="font-roboto">Amanda</h5>
+                        <hr>
+                        <span class="fonts-great-vibes size-33pt">Designer de Interiores</span>
+                    </div>
+                </div>
+                <p class="font-roboto my-3 line-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ac leo a finibus. Nullam tempus rutrum purus quis faucibus. Vestibulum eget ante cursus, viverra elit et, tempus nibh. Curabitur ornare volutpat risus eget interdum. Sed a lacinia quam.</p>
+            </div>
+        </div>
+    </div>
+</section>
