@@ -41,3 +41,8 @@
     color: var(--colors-light-green);
     text-decoration: underline;
 }
+
+#happy-hour.fiveth img {
+    box-shadow: -12px 12px 30px black;
+    border-radius: 12px;
+}

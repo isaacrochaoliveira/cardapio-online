@@ -117,3 +117,17 @@
         </div>
     </div>
 </section>
+<section id="happy-hour" class="fiveth mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img src="<?= URL_BASE ?>assets/image/home/happy-hour.jpg" alt="Happy Hour" width="850px">
+            </div>
+            <div class="col-md-4 text-center my-auto">
+                <h3>Happy Hour</h3>
+                <p class="line-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum ac leo a finibus. Nullam tempus rutrum purus quis faucibus. Vestibulum eget ante cursus, viverra elit et, tempus nibh. Curabitur ornare volutpat risus eget interdum. Sed a lacinia quam. In libero dolor, volutpat quis gravida ut, euismod quis augue</p>
+            </div>
+        </div>
+    </div>
+
+</section>
