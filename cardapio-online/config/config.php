@@ -5,12 +5,12 @@ define("USUARIO", "root");
 define("SENHA", "");
 define("CHARSET","UTF8");
 
-define('CONTROLLER_PADRAO', 'home');
+define('CONTROLLER_PADRAO', 'login');
 define('METODO_PADRAO', 'home');
 define('NAMESPACE_CONTROLLER', 'app\\controllers\\');
-define('TIMEZONE',"America/Fortaleza");
+define('TIMEZONE',"America/Sao_Paulo");
 define('CAMINHO', realpath('./'));
-define("TITULO_SITE","mjailton-ligando vc ao mundo do conhecimento");
+define("TITULO_SITE","Cardápio Online");
 
 define('URL_BASE', 'http://' . $_SERVER["HTTP_HOST"].'/projects/cardapio-online/cardapio-online/cardapio-online/');
 define('URL_IMAGEM', "http://". $_SERVER['HTTP_HOST'] . "/projects/cardapio-online/cardapio-online/cardapio-online/assets/");

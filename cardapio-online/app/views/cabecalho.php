@@ -20,12 +20,22 @@ if ($active == 'Home') {
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">Notícias</a></li>
         </ul>
         <ul class="nav">
-            <div>
-                <i class="fa-solid fa-bag-shopping size-26pt"></i>
-                <div class="text-center">
-                    <p><?= count($carrinho) ?></p>
-                </div>
-            </div>
+            <?php
+                if (isset($_SESSION['id'])) {
+                    ?>
+                        <a href="<?= URL_BASE ?>login" class="btn btn-login">SING-IN</a>
+                    <?php
+                } else {
+                    ?>
+                    <a href="">
+                        <i class="fa-solid fa-bag-shopping size-26pt"></i>
+                        <div class="text-center">
+                            <p><?= count($carrinho) ?></p>
+                        </div>
+                    </a>
+                    <?php
+                }
+            ?>
         </ul>
     </div>
 </nav>
