@@ -49,16 +49,28 @@ class HomeController extends Controller {
     }
 
     /**
+     * Método Responsável por excluir um determinado produto do carrinho
+     * @param string $id
+     */
+    public function exc($id) {
+        HomeService::select("DELETE FROM carrinho WHERE id_produto = '$id'");
+        Flash::setMsg('Excluído com Sucesso!', -1);
+        $this->redirect(URL_BASE . 'home/produtos');
+    }
+
+    /**
      * Método Responsável por obter todos os produtos
      * @param \stdClass $data
      */
     public function obterProdutos($data) {
-        $data = HomeService::select("SELECT * FROM produtos");
         for ($key = 0; $key < count($data); $key += 1) {
             $carrinho = HomeService::select("SELECT * FROM carrinho WHERE id_produto = " . $data[$key]->id_produto);
-            if () {
-
+            if (count($carrinho) > 0) {
+                $data[$key]->carrinho = 'Sim';
+            } else {
+                $data[$key]->carrinho = 'Não';
             }
         }
+        return $data;
     }
 }
