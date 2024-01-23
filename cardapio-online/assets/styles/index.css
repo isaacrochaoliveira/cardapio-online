@@ -55,3 +55,19 @@
     margin-top: 100px;
     color: var(--colors-white)
 }
+
+/* Página de Produtos */
+
+#produtos.first #each_produto-card {
+    margin: 10px 0px;
+    padding: 10px 10px;
+    border: 1px solid var(--colors-orange);
+    box-shadow: 2px 2px 2px var(--colors-orange);
+}
+
+#produtos.first #each_produto-card .btn.btn-carrinho {
+    background: var(--colors-orange);
+    color: var(--colors-white);
+    padding: 10px 0px;
+    margin: 50px 0px 0px 0px;
+}

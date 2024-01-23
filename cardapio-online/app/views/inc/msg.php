@@ -10,7 +10,7 @@
     <div class="alert alert-<?= $msg->classe ?> alert-dismissible ">
         <h5 class="size-26pt ls-2px">
             <i class="<?= $msg->icone ?>"></i>
-            LoveChurch
+            Cardápio Online
         </h5>
         <p class="font-roboto size-14pt"><?= $msg->msg ?></p>
     </div>

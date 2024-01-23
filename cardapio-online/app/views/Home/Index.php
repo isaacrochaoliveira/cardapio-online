@@ -34,7 +34,7 @@
                     <span class="font-roboto size-36pt">R$29,90</span>
                 </div>
                 <div class="mt-3">
-                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Compra ou Add</a>
+                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Add ao Carrinho</a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -44,7 +44,7 @@
                     <span class="font-roboto size-36pt">R$29,90</span>
                 </div>
                 <div class="mt-3">
-                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Compra ou Add</a>
+                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Add ao Carrinho</a>
                 </div>
             </div>
             <div class="col-md-6 mt-5">
@@ -54,7 +54,7 @@
                     <span class="font-roboto size-36pt">R$29,90</span>
                 </div>
                 <div class="mt-3">
-                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Compra ou Add</a>
+                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Add ao Carrinho</a>
                 </div>
             </div>
             <div class="col-md-6 mt-5">
@@ -64,7 +64,7 @@
                     <span class="font-roboto size-36pt">R$29,90</span>
                 </div>
                 <div class="mt-3">
-                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Compra ou Add</a>
+                    <a href="<?= URL_BASE ?>home/add/macarrao-com-frango" class="btn btn-green">Add ao Carrinho</a>
                 </div>
             </div>
             <div class="text-center">

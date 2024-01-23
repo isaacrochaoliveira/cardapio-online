@@ -4,7 +4,7 @@ namespace app\models\validacao;
 
 use app\core\Validacao;
 
-class ReceberValidacao {
+class HomeValidacao {
     public static function salvar($reservas){
         $validacao = new Validacao();
         

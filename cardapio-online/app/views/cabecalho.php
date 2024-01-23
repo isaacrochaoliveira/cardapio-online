@@ -1,24 +1,31 @@
 <?php
-switch ($active) {
-    case 'Home':
-        $class = 'active';
-        break;
-    default:
-        $class = '';
+if ($active == 'Home') {
+    $home = 'active';
+    $car = '';
+} else {
+    $home = '';
+    if ($active == 'Cardápio') {
+        $car = 'active';
+    }
 }
 ?>
 
 <nav class="py-2 bg-light-green text-white border-bottom">
     <div class="container d-flex flex-wrap">
-        <ul class="nav me-auto">
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2 <?= $class ?>" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Cardápio</a></li>
+        <ul class="nav me-auto my-auto">
+            <li class="nav-item"><a href="<?= URL_BASE ?>home" class="nav-link text-white px-2 <?= $home ?>" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="<?= URL_BASE ?>home/produtos" class="nav-link text-white px-2" <?= $car ?>>Cardápio</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">Quem Somos</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">Notícias</a></li>
         </ul>
         <ul class="nav">
-            <li class="nav-item"><a href="#" class="btn btn-contact">Contato</a></li>
+            <div>
+                <i class="fa-solid fa-bag-shopping size-26pt"></i>
+                <div class="text-center">
+                    <p><?= count($carrinho) ?></p>
+                </div>
+            </div>
         </ul>
     </div>
 </nav>
