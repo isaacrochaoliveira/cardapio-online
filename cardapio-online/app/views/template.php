@@ -1,5 +1,7 @@
 <?php
-@session_start();
+    if (!($this->protect())) {
+        $this->close();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

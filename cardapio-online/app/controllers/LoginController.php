@@ -25,7 +25,6 @@ class LoginController extends Controller {
     public function home() {
         $data['view'] = 'login';
         $data['active'] = '';
-        $data['carrinho'] = [];
 
         $this->load('template', $data);
     }
@@ -42,5 +41,20 @@ class LoginController extends Controller {
         } else {
             $this->redirect(URL_BASE);
         }
+    }
+
+    /**
+     * Responsável por fazer o logoff do usuário
+     */
+    public function logoff() {
+        if (!(isset($_SESSION))) {
+            session_start();
+        }
+
+        if (isset($_SESSION['id'])) {
+            session_destroy();
+            $this->redirect(URL_BASE);
+        }
+
     }
 }

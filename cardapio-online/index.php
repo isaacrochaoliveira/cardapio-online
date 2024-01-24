@@ -1,7 +1,6 @@
 <?php
 use app\core\Excecao;
 
-session_start();
 require_once 'config/config.php';
 require_once 'app/core/Core.php';
 require_once 'app/helper/helper.php';
