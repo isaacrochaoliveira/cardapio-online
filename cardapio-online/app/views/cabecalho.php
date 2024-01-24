@@ -8,6 +8,10 @@ if ($active == 'Home') {
         $car = 'active';
     }
 }
+if ($active == ''){
+    $home = '';
+    $car = '';
+}
 ?>
 
 <nav class="py-2 bg-light-green text-white border-bottom">
@@ -18,21 +22,17 @@ if ($active == 'Home') {
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">Quem Somos</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">Notícias</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Carrinho</a></li>
         </ul>
         <ul class="nav">
             <?php
-                if (isset($_SESSION['id'])) {
+                if (!(isset($_SESSION['id']))) {
                     ?>
                         <a href="<?= URL_BASE ?>login" class="btn btn-login">SING-IN</a>
                     <?php
                 } else {
                     ?>
-                    <a href="">
-                        <i class="fa-solid fa-bag-shopping size-26pt"></i>
-                        <div class="text-center">
-                            <p><?= count($carrinho) ?></p>
-                        </div>
-                    </a>
+                    <a href="<?= URL_BASE ?>login/logoff" class="btn btn-danger">LOGOFF</a>
                     <?php
                 }
             ?>

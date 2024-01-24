@@ -19,15 +19,15 @@ class LoginService {
      * @param string $email
      * @param string $senha
      */
-    public function authentic($email, $senha) {
-        $data = self::select("SELECT * FROM usuarios WHERE email = '$email'");
+    public static function authentic($email, $senha) {
+        $data = self::select("SELECT * FROM usuarios WHERE usuario_email = '$email'");
         if (count($data) > 0) {
-            if (password_verify($senha, $data[0]->senha)) {
+            if (password_verify($senha, $data[0]->usuario_senha)) {
                 self::createSession($data);
                 return true;
             }
         }
-        Flash::setMsg('Usuário ');
+        Flash::setMsg('Usuário e/ou Senha Incorretos', -1);
         return false;
     }
 
@@ -35,7 +35,7 @@ class LoginService {
      * Responsável por criar uma sessão para o usuário
      * @param stdClass $data
      */
-    public function createSession($data) {
+    public static function createSession($data) {
         if (!(isset($_SESSION))) {
             session_start();
         }

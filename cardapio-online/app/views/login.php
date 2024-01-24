@@ -17,8 +17,7 @@
                 $this->verMsg();
                 $this->verErro();
             ?>
-            <h1 class="mb-5">LoveChurch</h1>
-            <form action="<?= URL_BASE ?>login/checkall" method="post">
+            <form action="<?= URL_BASE ?>login/authentic" method="post">
                 <div class="row">
                     <div class="col-md-4 mx-auto">
                         <div class="form-floating">
