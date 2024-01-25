@@ -148,6 +148,15 @@ mark {
     line-height: 34px;
 }
 
+.background-transparent {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
+    padding: 50px 0;
+}
+
+.social-medias {
+    background: linear-gradient(var(--colors-light-green), var(--colors-light-green));
+}
+
 /*COLORS*/
 .text-white {
     color: var(--colors-white) !important;

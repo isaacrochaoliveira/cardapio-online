@@ -49,6 +49,16 @@ class HomeController extends Controller {
     }
 
     /**
+     * Responsável por carregar a página de quem somos
+     */
+    public function quemSomos() {
+        $data['view'] = 'Home/QuemSomos';
+        $data['active'] = 'QuemSomos';
+
+        $this->load("template", $data);
+    }
+
+    /**
      * Método Responsável por excluir um determinado produto do carrinho
      * @param string $id
      */

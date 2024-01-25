@@ -51,10 +51,9 @@ class LoginController extends Controller {
             session_start();
         }
 
-        if (isset($_SESSION['id'])) {
+        if (isset($_SESSION['usuario']['id'])) {
             session_destroy();
             $this->redirect(URL_BASE);
         }
-
     }
 }

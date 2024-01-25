@@ -30,21 +30,6 @@ class Controller{
        exit;
    }
 
-   public function protect() {
-         if (!(isset($_SESSION))) {
-             session_start();
-         }
-
-         if (!(isset($_SESSION['id']))) {
-             return false;
-         } else {
-             return true;
-         }
-   }
-
-   public function close() {
-         header('Location: ' . URL_BASE);
-   }
    
    public function incluir($view){
        include "app/views/".$view .".php";

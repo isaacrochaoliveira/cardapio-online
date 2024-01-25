@@ -1,41 +1,40 @@
 <?php
-if ($active == 'Home') {
-    $home = 'active';
-    $car = '';
-} else {
-    $home = '';
-    if ($active == 'Cardápio') {
+switch ($active) {
+    case 'Home':
+        $home = 'active';
+        $car = '';
+        $quem = '';
+        break;
+    case 'Cardápio':
+        $home = '';
         $car = 'active';
-    }
-}
-if ($active == ''){
-    $home = '';
-    $car = '';
+        $quem = '';
+        break;
+    case 'QuemSomos':
+        $home = '';
+        $car = '';
+        $quem = 'active';
+        break;
+    default:
+        $home = '';
+        $car = '';
+        $quem = '';
+        break;
 }
 ?>
 
 <nav class="py-2 bg-light-green text-white border-bottom">
     <div class="container d-flex flex-wrap">
         <ul class="nav me-auto my-auto">
-            <li class="nav-item"><a href="<?= URL_BASE ?>home" class="nav-link text-white px-2 <?= $home ?>" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="<?= URL_BASE ?>" class="nav-link text-white px-2 <?= $home ?>" aria-current="page">Home</a></li>
             <li class="nav-item"><a href="<?= URL_BASE ?>home/produtos" class="nav-link text-white px-2" <?= $car ?>>Cardápio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Quem Somos</a></li>
+            <li class="nav-item"><a href="<?= URL_BASE ?>home/quemSomos" class="nav-link text-white px-2 <?= $quem ?>">Quem Somos</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">Notícias</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white px-2">Carrinho</a></li>
         </ul>
         <ul class="nav">
-            <?php
-                if (!(isset($_SESSION['id']))) {
-                    ?>
-                        <a href="<?= URL_BASE ?>login" class="btn btn-login">SING-IN</a>
-                    <?php
-                } else {
-                    ?>
-                    <a href="<?= URL_BASE ?>login/logoff" class="btn btn-danger">LOGOFF</a>
-                    <?php
-                }
-            ?>
+
         </ul>
     </div>
 </nav>

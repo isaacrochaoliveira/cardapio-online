@@ -1,4 +1,3 @@
-<?php @session_start(); ?>
 <section id="produtos" class="first">
     <?php
         $this->verMsg();
@@ -22,17 +21,10 @@
                                     <a href="<?= URL_BASE ?>home/exc/<?= $itens[$key]->id_produto ?>" class="btn btn-exc w-100">Excluír do Carrinho</a>
                                     <?php
                                 } else {
-                                    if (isset($_SESSION['id'])) {
-                                        ?>
+                                    ?>
                                         <a href="<?= URL_BASE ?>home/carrinho/<?= $itens[$key]->produto_url ?>" class="btn btn-carrinho w-100">Add ao Carrinho</a>
-                                        <?php
-                                    } else {
-                                        ?>
-                                        <a href="<?= URL_BASE ?>login" class="btn btn-carrinho w-100">Add ao Carrinho</a>
-                                        <?php
-                                    }
-
-                                }
+                                    <?php
+                            }
                             ?>
                         </div>
                     <?php
