@@ -22,16 +22,13 @@ switch ($active) {
         break;
 }
 ?>
-
 <nav class="py-2 bg-light-green text-white border-bottom">
     <div class="container d-flex flex-wrap">
         <ul class="nav me-auto my-auto">
             <li class="nav-item"><a href="<?= URL_BASE ?>" class="nav-link text-white px-2 <?= $home ?>" aria-current="page">Home</a></li>
             <li class="nav-item"><a href="<?= URL_BASE ?>home/produtos" class="nav-link text-white px-2" <?= $car ?>>Cardápio</a></li>
             <li class="nav-item"><a href="<?= URL_BASE ?>home/quemSomos" class="nav-link text-white px-2 <?= $quem ?>">Quem Somos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Notícias</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white px-2">Carrinho</a></li>
+            <li class="nav-item"><a href="<?= URL_BASE ?>home/card" class="nav-link text-white px-2">Carrinho</a></li>
         </ul>
         <ul class="nav">
 

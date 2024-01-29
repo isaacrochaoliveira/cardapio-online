@@ -32,6 +32,15 @@ class HomeController extends Controller {
     }
 
     /**
+     * Responsável por carrinho de produtos
+     */
+    public function card() {
+        $data['view'] = 'Home/Card';
+
+        $this->load("template", $data);
+    }
+
+    /**
      * Método Responsável por adicionar o produto ao carrihno
      * @param string $produto
      */
