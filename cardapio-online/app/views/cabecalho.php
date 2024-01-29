@@ -4,21 +4,31 @@ switch ($active) {
         $home = 'active';
         $car = '';
         $quem = '';
+        $carrinho = '';
         break;
     case 'Cardápio':
         $home = '';
         $car = 'active';
         $quem = '';
+        $carrinho = '';
         break;
     case 'QuemSomos':
         $home = '';
         $car = '';
         $quem = 'active';
+        $carrinho = '';
+        break;
+    case 'Carrinho':
+        $home = '';
+        $car = '';
+        $quem = '';
+        $carrinho = 'active';
         break;
     default:
         $home = '';
         $car = '';
         $quem = '';
+        $carrinho = '';
         break;
 }
 ?>
@@ -28,7 +38,7 @@ switch ($active) {
             <li class="nav-item"><a href="<?= URL_BASE ?>" class="nav-link text-white px-2 <?= $home ?>" aria-current="page">Home</a></li>
             <li class="nav-item"><a href="<?= URL_BASE ?>home/produtos" class="nav-link text-white px-2" <?= $car ?>>Cardápio</a></li>
             <li class="nav-item"><a href="<?= URL_BASE ?>home/quemSomos" class="nav-link text-white px-2 <?= $quem ?>">Quem Somos</a></li>
-            <li class="nav-item"><a href="<?= URL_BASE ?>home/card" class="nav-link text-white px-2">Carrinho</a></li>
+            <li class="nav-item"><a href="<?= URL_BASE ?>home/card" class="nav-link text-white px-2 <?= $carrinho ?>">Carrinho</a></li>
         </ul>
         <ul class="nav">
 

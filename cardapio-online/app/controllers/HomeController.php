@@ -36,6 +36,7 @@ class HomeController extends Controller {
      */
     public function card() {
         $data['view'] = 'Home/Card';
+        $data['active'] = 'Carrinho';
 
         $this->load("template", $data);
     }

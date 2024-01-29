@@ -97,3 +97,13 @@
 .border-hover:hover a {
     background: var(--colors-light-green);
 }
+
+/* Card */
+
+#card.first #header {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../image/home/card.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0;
+    color: var(--colors-white);
+}
