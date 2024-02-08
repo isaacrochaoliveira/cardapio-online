@@ -35,10 +35,22 @@ class HomeController extends Controller {
      * Responsável por carrinho de produtos
      */
     public function card() {
+        $data['produtos'] = HomeService::select("SELECT * FROM carrinho, produtos WHERE carrinho.id_produto = produtos.id_produto");
         $data['view'] = 'Home/Card';
+        $data['formatter'] = numfmt('pt_BR');
         $data['active'] = 'Carrinho';
 
         $this->load("template", $data);
+    }
+
+    /**
+     * Responsável por excluir um determinado produto do carrinho
+     * @param string $url_product
+     */
+    public function delete_carrinho($url_product) {
+        HomeService::delete('produto_url', 'produtos', $url_product);
+        Flash::setMsg('Produto Excluído com Sucesso!');
+        $this->redirect(URL_BASE . 'home/card');
     }
 
     /**
